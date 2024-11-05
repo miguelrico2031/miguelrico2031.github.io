@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  .intro-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .intro-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .intro-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #555;
+  }

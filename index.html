@@ -1,11 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miguel Rico Portfolio</title>
+    <title>Miguel Rico - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+
+    <style>
+        :root {
+            --header-color: #a016ff;
+            --bg-color: #000000;
+            
+            --card-border: #3e3e3e;
+            --text-color: #ffdb5d;
+            --link-color: #a016ff; /*#4ec9b0;*/
+            --link-hover: #71d5c4;
+            --button-bg: #a016ff; /*#4ec9b0;*/
+            --button-hover: #71d5c4;
+        }
+
+        body {
+
+            font-family: 'JetBrains Mono', serif;
+            font-weight: 400;
+            font-optical-sizing: auto;
+            font-style: normal;
+
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 2rem;
+        }
+
+        .card {
+            background-color: var(--bg-color);
+            height: 100%;
+            border: .5rem solid transparent; /* Set an initial border with transparent color */
+            border-radius: 1rem; /* Move border-radius here to avoid duplication */
+            transition: border-color 0.3s; /* Optional: for a smoother effect */
+        }
+
+        .card:hover {
+            border-color: var(--card-border); /* Change only the color on hover */
+        }
+
+        .card-title,
+        .card-text {
+            color: var(--text-color);
+        }
+
+        h1, h2, h3, h4, h5 {
+            color: var(--header-color);
+            font-weight: 700;
+
+        }
+        h1{
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 3.2rem;
+        }
+        h3{
+            font-size: 2.7rem;
+        }
+        b{
+            font-weight: 50;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--link-hover);
+        }
+
+        .btn-primary {
+            background-color: var(--button-bg);
+            border-color: var(--button-bg);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--button-hover);
+            border-color: var(--button-hover);
+        }
+
+        .fixed-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .scroll-to-top {
+            cursor: pointer;
+        }
+
+        .hidden{
+            display: none;
+        }
+
+        .mailText {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 400;
+        font-size: 1rem;
+        padding-left: 0.5rem;
+        }
+
+        .contact-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        }
+
+        .contact-link > i {
+        font-size: 2rem;
+        }
+
+        @media (min-width: 768px) {
+        .mailText {
+            font-size: 2rem;
+            padding-left: 1rem;
+        }
+
+        .contact-link > i {
+            font-size: 4rem;
+        }
+        }
+
+
+    </style>
 </head>
+
 <body>
-    <h1>HOLA BIENVENIDE A MI PORTFOLIO! :D</h1>
+    <div class="container py-5">
+        <div class="row align-items-center mb-4">
+            <div class="col-md-12">
+                <h1>Miguel Rico</h1>
+                <p  class="englishText">
+                    <br>
+                    I'm a videogame development college student in my last year, aspiring to work as a game programmer
+                    at a AAA game company.
+                </p>
+                <p class="englishText">
+                    <br>
+                    I have made a nice amount of games with Unity and C#, and completed several college projects that
+                    showcase my programming skills. I have also participated and won a few game jams.
+                </p>
+                
+                <p class="spanishText">
+                    <br>
+                    Soy un estudiante universitario de desarrollo de videojuegos en mi último año, con aspiraciones de trabajar como programador de juegos en una empresa de juegos AAA.
+                </p>
+                <p class="spanishText">
+                    <br>
+                  He hecho una buena cantidad de juegos con Unity y C#, y he completado varios proyectos universitarios que demuestran mis habilidades de programación. También he participado y ganado varios game jams.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="mb-4 spanishText">
+            <h2>Currículum</h2>
+            <a href="/CV Miguel Rico.pdf" target="_blank">Descargar CV <i class="bi bi-download"></i></a>
+        </div>
+
+        <div class="mb-4 englishText">
+            <h2>Resume</h2>
+            <a href="/CV Miguel Rico.pdf" target="_blank">Download CV <i class="bi bi-download"></i></a>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="englishText">Contact</h2>
+            <h2 class="spanishText">Contacto</h2>
+            <div class="row justify-content-center gap-5">
+              <div class="col-6 col-md-3 mb-3 mb-md-0 d-flex justify-content-center align-items-center">
+                <a class="contact-link" href="https://github.com/miguelrico2931">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="col-6 col-md-3 mb-3 mb-md-0 d-flex justify-content-center align-items-center">
+                <a class="contact-link" href="https://www.linkedin.com/in/miguelrico">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+              <div class="col-6 col-md-3 mb-3 mb-md-0 d-flex justify-content-center align-items-center">
+                <a class="contact-link" href="https://miguelrico.itch.io">
+                  <i class="fab fa-itch-io"></i>
+                </a>
+              </div>
+              <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
+                <a class="contact-link" href="mailto:miguelrico2031@gmail.com">
+                  <i class="fas fa-envelope"></i>
+                  <span class="mailText">miguelrico2031@gmail.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        <div>
+            <div class="englishText">
+                <h2>Personal projects</h2>
+                <p>
+                    I have made several games for Game Jams, all in Unity, 
+                    that have helped me to improve my programming and teamwork skills.
+
+                </p>
+            </div>
+            <div class="spanishText">
+                <h2>Proyectos personales</h2>
+                <p>
+                    He hecho varios juegos para Game Jams, todos en Unity, 
+                    que me han ayudado a mejorar mis habilidades de programación y trabajo en equipo.
+                </p>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-lg-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <a href="https://miguelrico2031.itch.io/soulamander" target="_blank">
+                            <img src="https://img.itch.zone/aW1nLzExOTM0MzU5LnBuZw==/315x250%23c/5ebQCQ.png" class="card-img-top hover-fade" alt="Soulamander">
+                        </a>
+                        <div class="card-body englishText">
+                            <h3 class="card-title">Soulamander</h3>
+                            <p class="card-text">A 2D side-scrolling platformer game where you 
+                                possess golems to progress through levels filled with challenging obstacles.</p>
+                            <p>Year: 2023</p>
+                            <p>Tools: Unity, C#</p>
+                            <p>Team Size: 3</p>
+                            <p><b> Role:</b> Programmer, game designer</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+            <h2 class="englishText">College Projects</h2>
+            
+            <div class="row row-cols-1 row-cols-lg-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <a href="/api/placeholder/400/300" target="_blank">
+                            <img src="/api/placeholder/400/300" class="card-img-top hover-fade" alt="Platformer Game">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title">Platformer Game</h3>
+                            <p class="card-text">A 2D side-scrolling platformer game</p>
+                            <p>Year: 2022</p>
+                            <p>Tools: Unity, C#</p>
+                            <p>Team Size: 3</p>
+                            <p>My Role: Programmer, level designer</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+     <!-- Botones fijos -->
+     <div class="fixed-buttons">
+        <button id="languageButton" class="btn btn-secondary">
+            <svg id="ukFlag" class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#0052b4"><path d="m52.92 100.142c-20.109 26.163-35.272 56.318-44.101 89.077h133.178z"/><path d="m503.181 189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075 89.076z"/><path d="m8.819 322.784c8.83 32.758 23.993 62.913 44.101 89.075l89.074-89.075z"/><path d="m411.858 52.921c-26.163-20.109-56.317-35.272-89.076-44.102v133.177z"/><path d="m100.142 459.079c26.163 20.109 56.318 35.272 89.076 44.102v-133.176z"/><path d="m189.217 8.819c-32.758 8.83-62.913 23.993-89.075 44.101l89.075 89.075z"/><path d="m322.783 503.181c32.758-8.83 62.913-23.993 89.075-44.101l-89.075-89.075z"/><path d="m370.005 322.784 89.075 89.076c20.108-26.162 35.272-56.318 44.101-89.076z"/></g><g fill="#d80027"><path d="m509.833 222.609h-220.44-.001v-220.442c-10.931-1.423-22.075-2.167-33.392-2.167-11.319 0-22.461.744-33.391 2.167v220.44.001h-220.442c-1.423 10.931-2.167 22.075-2.167 33.392 0 11.319.744 22.461 2.167 33.391h220.44.001v220.442c10.931 1.423 22.073 2.167 33.392 2.167 11.317 0 22.461-.743 33.391-2.167v-220.44-.001h220.442c1.423-10.931 2.167-22.073 2.167-33.392 0-11.317-.744-22.461-2.167-33.391z"/><path d="m322.783 322.784 114.236 114.236c5.254-5.252 10.266-10.743 15.048-16.435l-97.802-97.802h-31.482z"/><path d="m189.217 322.784h-.002l-114.235 114.235c5.252 5.254 10.743 10.266 16.435 15.048l97.802-97.804z"/><path d="m189.217 189.219v-.002l-114.236-114.237c-5.254 5.252-10.266 10.743-15.048 16.435l97.803 97.803h31.481z"/><path d="m322.783 189.219 114.237-114.238c-5.252-5.254-10.743-10.266-16.435-15.047l-97.802 97.803z"/></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg>
+            <svg id="spainFlag" class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m0 256c0 31.314 5.633 61.31 15.923 89.043l240.077 22.261 240.077-22.261c10.29-27.733 15.923-57.729 15.923-89.043s-5.633-61.31-15.923-89.043l-240.077-22.261-240.077 22.261c-10.29 27.733-15.923 57.729-15.923 89.043z" fill="#ffda44"/><g fill="#d80027"><path d="m496.077 166.957c-36.171-97.484-130.006-166.957-240.077-166.957s-203.906 69.473-240.077 166.957z"/><path d="m15.923 345.043c36.171 97.484 130.006 166.957 240.077 166.957s203.906-69.473 240.077-166.957z"/></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg>
+        </button>
+        <button id="scrollButton" class="btn btn-secondary scroll-to-top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </div>
+
+
+    <script>
+        // Cambiar bandera entre España y Reino Unido
+        const startInSpanish = false;
+        let spanish = !startInSpanish; 
+        function changeLanguage() {
+            if (spanish) {
+                uk.classList.remove('hidden');
+                spain.classList.add('hidden');
+            } else {
+                uk.classList.add('hidden');
+                spain.classList.remove('hidden');
+            }
+            spanish = !spanish;
+
+            Array.from(document.getElementsByClassName("spanishText")).forEach(st => spanish ? st.classList.remove('hidden') : st.classList.add('hidden'));
+            Array.from(document.getElementsByClassName("englishText")).forEach(st => spanish ? st.classList.add('hidden') : st.classList.remove('hidden'));
+        }
+
+        const languageButton = document.getElementById('languageButton');
+        const spain = document.getElementById('spainFlag');
+        const uk = document.getElementById('ukFlag'); 
+
+        changeLanguage();
+
+        languageButton.addEventListener('click', changeLanguage);
+
+        // Volver al principio de la página con animación
+        const scrollButton = document.getElementById('scrollButton');
+        scrollButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <style>
+        .hover-fade {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .hover-fade:hover {
+            opacity: 0.5;
+        }
+    </style>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
