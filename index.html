@@ -12,153 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
-
+    <link rel="stylesheet" href="styles.css">
     <style>
-        :root {
-            --header-color: #a016ff;
-            --bg-color: #000000;
-            
-            --card-border: #3e3e3e;
-            --text-color: #ffdb5d;
-            --link-color: #a016ff; /*#4ec9b0;*/
-            --link-hover: #71d5c4;
-            --button-bg: #a016ff; /*#4ec9b0;*/
-            --button-hover: #71d5c4;
-        }
-
-        body {
-
-            font-family: 'JetBrains Mono', serif;
-            font-weight: 400;
-            font-optical-sizing: auto;
-            font-style: normal;
-
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-size: 1.5rem;
-        }
-
-        .card {
-            background-color: var(--bg-color);
-            height: 100%;
-            border: .5rem solid transparent; /* Set an initial border with transparent color */
-            border-radius: 1rem; /* Move border-radius here to avoid duplication */
-            transition: border-color 0.5s; /* Optional: for a smoother effect */
-        }
-
-        .card:hover {
-            border-color: var(--card-border); /* Change only the color on hover */
-        }
-
-        .card-text {
-            color: var(--text-color);
-        }
-
-        h1, h2, h3, h4, h5 {
-            color: var(--header-color);
-            font-weight: 700;
-
-        }
-        h1{
-            font-size: 4rem;
-        }
-        h2{
-            font-size: 3.2rem;
-        }
-        h3{
-            font-size: 2.7rem;
-        }
-        b{
-            font-weight: 500;
-            color: var(--header-color)
-        }
-
-        a {
-            color: var(--link-color);
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: var(--link-hover);
-        }
-
-        .btn-primary {
-            background-color: var(--button-bg);
-            border-color: var(--button-bg);
-            transition: .3s;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--button-hover);
-            border-color: var(--button-hover);
-        }
-
         
-        .btn-primary:focus {
-            background-color: var(--button-bg);
-            border-color: var(--button-hover);
-        }
-
-        .fixed-buttons {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .btn {
-            width: 100px;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-        }
-
-        .scroll-to-top {
-            cursor: pointer;
-        }
-
-        .hidden{
-            display: none;
-        }
-
-        .mailText {
-        font-family: 'JetBrains Mono', monospace;
-        font-weight: 400;
-        font-size: 1rem;
-        padding-left: 0.5rem;
-        }
-
-        .contact-link {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        }
-
-        .contact-link > i {
-        font-size: 2rem;
-        }
-
-        .card-img-top {
-            width: 100%;
-            height: 30rem; /*Ajusta la altura según sea necesario */
-            object-fit: contain; /* Escala y recorta la imagen para llenar el espacio */
-        }
-
-        @media (min-width: 768px) {
-        .mailText {
-            font-size: 2rem;
-            padding-left: 1rem;
-        }
-
-        .contact-link > i {
-            font-size: 4rem;
-        }
-
-        }
 
 
     </style>
@@ -239,9 +95,8 @@
                 <h2>My projects</h2>
                 <p>
                     I have made several games for Game Jams, all in Unity, 
-                    that have helped me to improve my programming and teamwork skills.<br>
-                    Also, I have several projects that were college coursework, mainly games and prototypes, 
-                    mainly games and prototypes.
+                    that have helped me to improve my programming and teamwork skills.
+                    Also, I have several projects that were college coursework, mainly games and prototypes.<br>
                 </p>
                 <br>
             </div>
@@ -249,7 +104,7 @@
                 <h2>Mis proyectos</h2>
                 <p>
                     He hecho varios juegos para Game Jams, todos en Unity, 
-                    que me han ayudado a mejorar mis habilidades de programación y trabajo en equipo.<br>
+                    que me han ayudado a mejorar mis habilidades de programación y trabajo en equipo.
                     También, tengo varios proyectos que fueron trabajos de asignaturas de la universidad, 
                     principalmente juegos y prototipos.<br>
                 </p>
@@ -257,6 +112,52 @@
             </div>
             
             <div class="row row-cols-1 row-cols-lg-2 g-4">
+                
+                
+                
+                
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="https://github.com/againstsoftware/Stratum" target="_blank" >
+                            <img src="./gifs/stratum.png" class="card-tn card-img-top hover-fade" alt="Stratum">
+                        </a>
+                        <div class="card-body englishText">
+                            <h3 class="card-title">Stratum</h3>
+                            <p class="card-text">
+                                Ongoing class project.<br>
+                                Multiplayer online card game, in 3D. No user interfaces. Only “analog” interaction.
+                            </p>
+                            <p><b>Year:</b> 2024</p>
+                            <p><b>Tools:</b> Unity, C#, Netcode for GameObjects</p>
+                            <p><b>Team Size:</b> 6</p>
+                            <p><b>Development time:</b> 6 weeks (ongoing)</p>
+                            <p><b> What I'm doing:</b> 
+                                Programming of the card game systems, using an MVC scheme, 
+                                programming of communications between players (Listen Server architecture). Game design.
+                            </p>
+                        </div>
+                        <div class="card-body spanishText">
+                            <h3 class="card-title">Stratum</h3>
+                            <p class="card-text">
+                                Proyecto de clase en curso.<br>
+                                Juego de cartas multijugador online, en 3D. Sin interfaces de usuario. Sólo interacción "analógica".
+                            </p>
+                            <p><b>Año:</b> 2024</p>
+                            <p><b>Herramientas:</b> Unity, C#, Netcode for GameObjects</p>
+                            <p><b>Tamaño del Equipo:</b> 6</p>
+                            <p><b>Tiempo de desarrollo:</b> 6 semanas (en curso)</p>
+                            <p><b> Qué estoy haciendo:</b>  
+                                Programación de los sistemas del juego de cartas, usando un esquema MVC, 
+                                programación de las comunicaciones entre jugadores (arquitectura Listen Server). Diseño de juego.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
                 <div class="col">
                     <div class="card">
                         <a href="https://miguelrico2031.itch.io/soulamander" target="_blank"  onmouseover="showGif(this)" onmouseout="hideGif(this)">
@@ -267,19 +168,20 @@
                         <div class="card-body englishText">
                             <h3 class="card-title">Soulamander</h3>
                             <p class="card-text">
-                                1st place in the GameScholars 2nd Edition 2023. Chosen to be exhibited at the Gamescom.<br>
+                                1st place in the GameScholars Jam 2nd Edition 2023. Chosen to be exhibited at the Gamescom.<br>
                                 A 2D side-scrolling platformer game where you 
                                 possess golems to progress through levels filled with challenging obstacles.</p>
                             <p><b>Year:</b> 2023</p>
                             <p><b>Tools:</b> Unity, C#</p>
                             <p><b>Team Size:</b> 3</p>
                             <p><b>Development time:</b> 1 month</p>
-                            <p><b> What i did:</b> Programmed Metroidvania mechanics, puzzles, scripted events, UI programming, VFX and post processing</p>
+                            <p><b> What I did:</b> Programmed Metroidvania mechanics, puzzles, scripted events, UI programming, VFX and post processing.
+                                Game design and dialogue writing.</p>
                         </div>
                         <div class="card-body spanishText">
                             <h3 class="card-title">Soulamander</h3>
                             <p class="card-text">
-                                1° puesto en la GameScholars 2nd Edition 2023. Elegido para ser expuesto en la Gamescom.<br>
+                                1° puesto en la GameScholars Jam 2nd Edition 2023. Elegido para ser expuesto en la Gamescom.<br>
                                 Un juego de plataformas 2D de desplazamiento lateral en el que 
                                 posees gólems para avanzar por niveles llenos de obstáculos desafiantes.</p>
                             <p><b>Año:</b> 2023</p>
@@ -289,6 +191,7 @@
 
                             <p><b> Qué hice:</b>  
                                 Programación de Mecánicas de Metroidvania, puzles, eventos <i>scripteados</i>, interfaz de usuario, efectos visuales y postprocesado.
+                                Diseño de juego y escritura de los diálogos.
                                 </p>
                         </div>
                     </div>
@@ -312,8 +215,8 @@
                             <p><b>Tools:</b> Unity, C#</p>
                             <p><b>Team Size:</b> 5</p>
                             <p><b>Development time:</b> 1 week</p>
-                            <p><b> What i did:</b> 
-                                Programmed all the game mechanics, puzzles, and "cinematics".
+                            <p><b> What I did:</b> 
+                                Programmed all the game mechanics, puzzles, and "cinematics". Game design and dialogue writing.
                             </p>
                         </div>
                         <div class="card-body spanishText">
@@ -329,7 +232,7 @@
                             <p><b>Tamaño del Equipo:</b> 5</p>
                             <p><b>Tiempo de desarrollo:</b> 1 semana</p>
                             <p><b> Qué hice:</b>  
-                                Programé todas las mecánicas de juego, los puzles y las "cinemáticas".
+                                Programé todas las mecánicas de juego, los puzles y las "cinemáticas". Diseño de juego y escritura de los diálogos.
                             </p>
                         </div>
                     </div>
@@ -353,9 +256,9 @@
                             <p><b>Tools:</b> Unity, C#</p>
                             <p><b>Team Size:</b> 6</p>
                             <p><b>Development time:</b> 3 weeks</p>
-                            <p><b> What i did:</b> 
+                            <p><b> What I did:</b> 
                                 Programming of the main game mechanics, clicker progression system, dialogue system, election system,
-                                basic pedestrian AI, special game events.
+                                basic pedestrian AI, special game events. Game design and dialogue writing.
                             </p>
                         </div>
                         <div class="card-body spanishText">
@@ -370,7 +273,46 @@
                             <p><b>Tiempo de desarrollo:</b> 3 semanas</p>
                             <p><b> Qué hice:</b>  
                                 Programación de las mecánicas principales del juego, sistema de progresión de clicker, sistema de diálogo, sistema de elecciones,
-                                IA básica de peatones, eventos especiales del juego.
+                                IA básica de peatones, eventos especiales del juego. Diseño de juego y escritura de los diálogos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card">
+                        <a href="https://img.itch.zone/aW1nLzExMzM0NjM5LnBuZw==/original/bH3nKc.png" target="_blank"  onmouseover="showGif(this)" onmouseout="hideGif(this)">
+                            <img src="https://img.itch.zone/aW1nLzExMzM2MzI0LnBuZw==/315x250%23c/MfVKZx.png" class="card-img-top hover-fade" alt="Keysmash">
+                            <img src ="gifs/keysmash.gif" class="card-gif card-img-top hidden">
+
+                        </a>
+                        <div class="card-body englishText">
+                            <h3 class="card-title">Keysmash</h3>
+                            <p class="card-text">
+                                1st place in the Gamegen Game Jam 2023.<br>
+                                Roguelike game in which you explore a dungeon to find the missing keys on your keyboard. Each key gives you a new ability to defeat the enemies.
+                            </p>
+                            <p><b>Year:</b> 2024</p>
+                            <p><b>Tools:</b> Unity, C#</p>
+                            <p><b>Team Size:</b> 5</p>
+                            <p><b>Development time:</b> 1 week</p>
+                            <p><b> What I did:</b> 
+                                Programming all game mechanics such as basic enemy AI and character skills. Game and level design.
+                            </p>
+                        </div>
+                        <div class="card-body spanishText">
+                            <h3 class="card-title">Keysmash</h3>
+                            <p class="card-text">
+                                1° puesto en la Gamegen Game Jam 2023.<br>
+                                Juego roguelike en el que exploras una mazmorra para encontrar las teclas perdidas de tu teclado. Cada llave te da una nueva habilidad para derrotar a los enemigos.
+                            </p>
+                            <p><b>Año:</b> 2024</p>
+                            <p><b>Herramientas:</b> Unity, C#</p>
+                            <p><b>Tamaño del Equipo:</b> 5</p>
+                            <p><b>Tiempo de desarrollo:</b> 1 semana</p>
+                            <p><b> Qué hice:</b>  
+                                Programación de todas las mecánicas del juego, como la IA básica de los enemigos y las habilidades de los personajes. Diseño de juego y niveles.
                             </p>
                         </div>
                     </div>
@@ -380,28 +322,28 @@
                 <div class="col">
                     <div class="card">
                         <a href="https://miguelrico2031.itch.io/defense-of-the-pumpkin-patch" target="_blank" onmouseover="showGif(this)" onmouseout="hideGif(this)">
-                            <img src="https://img.itch.zone/aW1nLzE4MjY2MTI1LnBuZw==/315x250%23c/PXngPY.png" class="card-tn card-img-top hover-fade" alt="Off with the Wall">
+                            <img src="https://img.itch.zone/aW1nLzE4MjY2MTI1LnBuZw==/315x250%23c/PXngPY.png" class="card-tn card-img-top hover-fade" alt="Defense of the Pumpkin Patch">
                             <img src ="gifs/dotpp.gif" class="card-gif card-img-top hidden">
                         </a>
                         <div class="card-body englishText">
                             <h3 class="card-title">Defense of the Pumpkin Patch</h3>
                             <p class="card-text">
-                                Video Game Engineering Class Project. Honorable mention grade.<br>
+                                Video Game Engineering class project. <span class="hidden">Honorable Mention grade</span><br>
                                 Tower defense game in which you protect pumpkins from farmers, ghosts and zombies.
                             </p>
                             <p><b>Year:</b> 2023</p>
                             <p><b>Tools:</b> Unity, C#</p>
                             <p><b>Team Size:</b> 4</p>
                             <p><b>Development time:</b> 2 months</p>
-                            <p><b> What i did:</b> 
+                            <p><b> What I did:</b> 
                                 Programming of the main Tower Defense mechanics (towers, enemy AI, simple economy), 
-                                implementing Design Patters such as State, Command and Service Locator.
+                                implementing Design Patters such as State, Command and Service Locator. Game and level design.
                             </p>
                         </div>
                         <div class="card-body spanishText">
                             <h3 class="card-title">Defense of the Pumpkin Patch</h3>
                             <p class="card-text">
-                                Proyecto de clase de ingeniería de videojuegos. Matrícula de honor.<br>
+                                Proyecto de clase de Ingeniería de Videojuegos. <span class="hidden">Matrícula de honor.</span><br>
                                 Juego de defensa de torres en el que proteges calabazas de granjeros, fantasmas y zombis.
                             </p>
                             <p><b>Año:</b> 2023</p>
@@ -410,11 +352,136 @@
                             <p><b>Tiempo de desarrollo:</b> 2 meses</p>
                             <p><b> Qué hice:</b>  
                                 Programación de la mecánica principal de Tower Defense (torres, IA enemiga, economía simple), 
-                                implementación de Patrones de Diseño como State, Command y Service Locator.
+                                implementación de Patrones de Diseño como State, Command y Service Locator. Diseño de juego y de nivel.
                             </p>
                         </div>
                     </div>
                 </div>
+
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="https://miguelrico2031.itch.io/asustame-calaveron" target="_blank" onmouseover="showGif(this)" onmouseout="hideGif(this)">
+                            <img src="./gifs/accover.png" class="card-tn card-img-top hover-fade" alt="Asustame Calaveron">
+                            <img src ="./gifs/ac.gif" class="card-gif card-img-top hidden">
+                        </a>
+                        <div class="card-body englishText">
+                            <h3 class="card-title">Asustame, Calaveron!</h3>
+                            <p class="card-text">
+                                Advanced Programming class project. Developed without any existent game engine, using only OpenGL and C++. <br>
+                                A simple FPS prototype featuring a basic physics system and a mexican theme.
+        
+                            </p>
+                            <p><b>Year:</b> 2022</p>
+                            <p><b>Tools:</b> OpenGL, C++</p>
+                            <p><b>Team Size:</b> 1</p>
+                            <p><b>Development time:</b> 3 weeks</p>
+                            <p><b> What I did:</b> 
+                                Programming of the game engine, covering rendering, a component and game object system, 
+                                a simple physics system, all FPS mechanics, enemy AI, and basic progression.
+                            </p>
+                        </div>
+                        <div class="card-body spanishText">
+                            <h3 class="card-title">¡Asústame, Calaverón!</h3>
+                            <p class="card-text">
+                                Proyecto de clase de Programación Avanzada. Desarrollado sin ningún motor de juego existente, utilizando sólo OpenGL y C++.<br>
+                                Un prototipo simple de FPS con un sistema básico de físicas y una temática mexicana.
+                            </p>
+                            <p><b>Año:</b> 2022</p>
+                            <p><b>Herramientas:</b> OpenGL, C++</p>
+                            <p><b>Tamaño del Equipo:</b> 1</p>
+                            <p><b>Tiempo de desarrollo:</b> 3 semanas</p>
+                            <p><b> Qué hice:</b>  
+                                Programación del motor de juego, incluyendo el renderizado, un sistema de componentes y <i>game objects</i>, 
+                                un sistema sencillo de físicas, todas las mecánicas de FPS, IA de enemigos y progresión básica.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col">
+                    <div class="card">
+                        <a href="https://github.com/miguelrico2031/Netcode-Multiplayer-Race-Game" target="_blank" onmouseover="showGif(this)" onmouseout="hideGif(this)">
+                            <img src="./gifs/racegamecover.png" class="card-tn card-img-top hover-fade" alt="Race Game">
+                            <img src ="./gifs/racing game.gif" class="card-gif card-img-top hidden">
+                        </a>
+                        <div class="card-body englishText">
+                            <h3 class="card-title">Netcode Multiplayer Race Game</h3>
+                            <p class="card-text">
+                                Multiplayer Environments class project. <br>
+                                Basic prototype of an online multiplayer racing game, with Client-Server architecture (Listen Server).
+        
+                            </p>
+                            <p><b>Year:</b> 2024</p>
+                            <p><b>Tools:</b> Unity, C#, Netcode for GameObjects</p>
+                            <p><b>Team Size:</b> 2</p>
+                            <p><b>Development time:</b> 6 weeks</p>
+                            <p><b> What I did:</b> 
+                                Programming of racing game mechanics, Listen Server architecture (Host with full authority), 
+                                basic lobby programming, netcode for communications between clients and the host, client-side prediction.
+                            </p>
+                        </div>
+                        <div class="card-body spanishText">
+                            <h3 class="card-title">Juego de Carreras Multijugador en Netcode</h3>
+                            <p class="card-text">
+                                Proyecto de clase de Entornos Multijugador. <br>
+                                Prototipo básico de un juego de carreras mutlijugador online, con arquitectura Cliente-Servidor (Listen Server).
+                            </p>
+                            <p><b>Año:</b> 2024</p>
+                            <p><b>Herramientas:</b> Unity, C#, Netcode for GameObjects</p>
+                            <p><b>Tamaño del Equipo:</b> 2</p>
+                            <p><b>Tiempo de desarrollo:</b> 6 semanas</p>
+                            <p><b> Qué hice:</b>  
+                                Programación de mecánicas de juego de carreras, arquitectura de Listen Server (Host con toda la autoridad), 
+                                programación básica de lobby, netcode para comunicaciones entre jugadores y el host, predicción del lado del cliente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card">
+                        <a href="https://lertronum.itch.io/duel-for-the-mage-tower" target="_blank" onmouseover="showGif(this)" onmouseout="hideGif(this)">
+                            <img src="https://img.itch.zone/aW1nLzE0NTg0MDQ3LnBuZw==/315x250%23c/tHWBhv.png" class="card-tn card-img-top hover-fade" alt="Duel for the Mage Tower">
+                            <img src ="./gifs/dftmt.gif" class="card-gif card-img-top hidden">
+                        </a>
+                        <div class="card-body englishText">
+                            <h3 class="card-title">Duel for the Mage Tower</h3>
+                            <p class="card-text">
+                                Networked Games class project.<br>
+                                Online 2-player game where you control wizards who cast spells at each other, and dodge each other's spells.
+        
+                            </p>
+                            <p><b>Year:</b> 2023</p>
+                            <p><b>Tools:</b> Phaser 3, JavaScript, CSS, Spring Boot, Java</p>
+                            <p><b>Team Size:</b> 4</p>
+                            <p><b>Development time:</b> 2 months</p>
+                            <p><b> What I did:</b> 
+                                Programming of game mechanics, development of the back-end server with REST API to manage user data (such as username, password and score),
+                                 and use of WebSockets for real-time communication between players during the game.
+                            </p>
+                        </div>
+                        <div class="card-body spanishText">
+                            <h3 class="card-title">Duel for the Mage Tower</h3>
+                            <p class="card-text">
+                                Proyecto de clase de Juegos en Red.<br>
+                                Juego en línea de 2 jugadores donde controlan a magos que se lanzan hechizos, y esquivan los del otro.
+                            </p>
+                            <p><b>Año:</b> 2023</p>
+                            <p><b>Herramientas:</b> Phaser 3, JavaScript, CSS, Spring Boot, Java</p>
+                            <p><b>Tamaño del Equipo:</b> 4</p>
+                            <p><b>Tiempo de desarrollo:</b> 2 meses</p>
+                            <p><b> Qué hice:</b>  
+                                Programación de mecánicas del juego, desarrollo del servidor back-end con API REST para gestionar datos de usuario 
+                                (como usuario, contraseña y puntuación), y uso de WebSockets para la comunicación en tiempo real entre jugadores durante la partida.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
 
 
 
